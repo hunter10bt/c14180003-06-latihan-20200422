@@ -1,4 +1,4 @@
 <p>Halaman Input</p>
-<input type="text" placeholder="nama Jurusan"><br>
-<textarea rows="2" placeholder="Deskripsi Jurusan" id="deskripsi"></textarea>
+<input type="text" placeholder="nama Jurusan" [(ngModel)] = "nama"><br>
+<textarea rows="2" placeholder="Deskripsi Jurusan" {(ngModel)}="deskripsi"></textarea>
 <button (click)="input()">Input</button>

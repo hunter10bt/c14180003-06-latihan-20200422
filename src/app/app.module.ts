@@ -22,9 +22,9 @@ const routes:Routes = [
     BrowserModule, 
     FormsModule,
     RouterModule.forRoot(routes),
-    Globals
   ],
   declarations: [ AppComponent, HelloComponent, InputComponent, ListComponent, EditComponent ],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent ],
+  providers:  [Globals]
 })
 export class AppModule { }

@@ -16,7 +16,8 @@ export class InputComponent implements OnInit {
   }
 
   input() {
-    this.nama = "";
-    this.deskripsi = "";
+    var add = {"Nama": this.nama, "Deskripsi": this.deskripsi};
+
+    this.globals.daftar.push(add);
   }
 }
