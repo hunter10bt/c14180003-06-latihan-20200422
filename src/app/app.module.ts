@@ -20,7 +20,8 @@ const routes:Routes = [
   imports:      [ 
     BrowserModule, 
     FormsModule,
-    RouterModule.forRoot(routes) 
+    RouterModule.forRoot(routes),
+    lobals
   ],
   declarations: [ AppComponent, HelloComponent, InputComponent, ListComponent, EditComponent ],
   bootstrap:    [ AppComponent ]

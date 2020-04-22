@@ -11,4 +11,6 @@ export class AppComponent  {
   constructor(private router:Router){}
 
   name = 'Angular';
+
+  jurusan=[];
 }
