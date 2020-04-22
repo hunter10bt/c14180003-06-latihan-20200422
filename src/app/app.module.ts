@@ -17,7 +17,11 @@ const routes:Routes = [
 ]
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
+  imports:      [ 
+    BrowserModule, 
+    FormsModule,
+    RouterModule.forRoot(routes) 
+  ],
   declarations: [ AppComponent, HelloComponent, InputComponent, ListComponent, EditComponent ],
   bootstrap:    [ AppComponent ]
 })
