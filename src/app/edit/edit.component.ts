@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Globals} from './globals'
+import {Globals} from '../globals'
 
 @Component({
   selector: 'app-edit',
@@ -8,7 +8,7 @@ import {Globals} from './globals'
 })
 export class EditComponent implements OnInit {
 
-  constructor() { }
+  constructor(public globals:Globals) { }
 
   ngOnInit() {
   }

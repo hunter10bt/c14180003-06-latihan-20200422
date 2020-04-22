@@ -9,6 +9,7 @@ import { ListComponent } from './list/list.component';
 import { EditComponent } from './edit/edit.component';
 import { from } from 'rxjs';
 import { Routes, RouterModule} from '@angular/router';
+import { Globals } from './globals';
 
 const routes:Routes = [
   {path:'input',component:InputComponent},
@@ -21,7 +22,7 @@ const routes:Routes = [
     BrowserModule, 
     FormsModule,
     RouterModule.forRoot(routes),
-    lobals
+    Globals
   ],
   declarations: [ AppComponent, HelloComponent, InputComponent, ListComponent, EditComponent ],
   bootstrap:    [ AppComponent ]
