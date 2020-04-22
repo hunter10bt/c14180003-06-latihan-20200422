@@ -1,2 +1,5 @@
 <p>Halaman List</p>
-<div *ngFor = ""></div>
+<div *ngFor = "let jurusan of globals.daftar">
+  Nama Jurusan: {{jurusan["nama"]}} <br>
+  Deskripsi Jurusan{{jurusan["deskripsi"]}} <br>
+</div>
