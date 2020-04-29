@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Globals} from '../globals';
+import { GlobalsService } from '../globals.service';
 
 @Component({
   selector: 'app-list',
@@ -8,9 +8,13 @@ import {Globals} from '../globals';
 })
 export class ListComponent implements OnInit {
 
-  constructor(public globals:Globals) { }
+  data: any; 
+
+  constructor(public globals:GlobalsService) {
+  }
 
   ngOnInit() {
+    this.data = this.globals.getData();
   }
 
 }

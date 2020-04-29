@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Globals} from '../globals';
+import { GlobalsService } from '../globals.service';
 
 @Component({
   selector: 'app-input',
@@ -9,15 +9,15 @@ import {Globals} from '../globals';
 export class InputComponent implements OnInit {
   nama = "";
   deskripsi = "";
+  data;
 
-  constructor(public globals:Globals) { }
+  constructor(public globals:GlobalsService) { }
 
   ngOnInit() {
+    this.data = this.globals.getData()
   }
 
   input() {
-    var add = {"Nama": this.nama, "Deskripsi": this.deskripsi};
-
-    this.globals.daftar.push(add);
+    this.globals.addData(this.nama, this.deskripsi);
   }
 }

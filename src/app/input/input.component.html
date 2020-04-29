@@ -1,4 +1,8 @@
 <p>Halaman Input</p>
 <input type="text" placeholder="nama Jurusan" [(ngModel)] = "nama"><br>
 <textarea rows="2" placeholder="Deskripsi Jurusan" [(ngModel)]="deskripsi"></textarea>
-<button (click)="input()">Input</button>
+<button (click)="input()">Tambahkan</button>
+<div *ngFor = "let jurusan of data">
+  Nama Jurusan: {{jurusan.nama}} <br>
+  Deskripsi Jurusan: {{jurusan.deskripsi}} <br>
+</div>
