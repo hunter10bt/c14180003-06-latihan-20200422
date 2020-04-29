@@ -10,6 +10,7 @@ import { EditComponent } from './edit/edit.component';
 import { from } from 'rxjs';
 import { Routes, RouterModule} from '@angular/router';
 import { Globals } from './globals';
+import { GlobalsService } from './globals.service';
 
 const routes:Routes = [
   {path:'input',component:InputComponent},
@@ -25,6 +26,6 @@ const routes:Routes = [
   ],
   declarations: [ AppComponent, HelloComponent, InputComponent, ListComponent, EditComponent ],
   bootstrap:    [ AppComponent ],
-  providers:  [Globals]
+  providers:  [Globals, GlobalsService]
 })
 export class AppModule { }
