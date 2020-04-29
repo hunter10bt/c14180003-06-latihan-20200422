@@ -14,7 +14,7 @@ export class InputComponent implements OnInit {
   constructor(public globals:GlobalsService) { }
 
   ngOnInit() {
-    this.data = this.globals.getData()
+    this.data = this.globals.getData();
   }
 
   input() {
