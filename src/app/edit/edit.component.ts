@@ -10,6 +10,8 @@ export class EditComponent implements OnInit {
 
   constructor(public globals:GlobalsService) { }
 
+  data = this.globals.getData();
+
   ngOnInit() {
   }
 
