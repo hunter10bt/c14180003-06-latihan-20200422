@@ -9,6 +9,7 @@ import { GlobalsService } from '../globals.service';
 export class InputComponent implements OnInit {
   nama = "";
   deskripsi = "";
+  nomor;
   data;
 
   constructor(public globals:GlobalsService) { }
@@ -19,5 +20,13 @@ export class InputComponent implements OnInit {
 
   input() {
     this.globals.addData(this.nama, this.deskripsi);
+  }
+
+  edit(){
+    console.log("tes")
+    var len = Object.keys(this.data).length;
+    for (var a = 0; a < len; a++){
+      console.log(a);
+    }
   }
 }

@@ -3,6 +3,13 @@
 <textarea rows="2" placeholder="Deskripsi Jurusan" [(ngModel)]="deskripsi"></textarea>
 <button (click)="input()">Tambahkan</button>
 <div *ngFor = "let jurusan of data">
-  Nama Jurusan: {{jurusan.nama}} <br>
+  {{jurusan.nomor}}. Nama Jurusan: {{jurusan.nama}} <br>
   Deskripsi Jurusan: {{jurusan.deskripsi}} <br>
+</div>
+<div id="edit">
+  <br>
+  <input type="text" placeholder="Nomor" [(ngModel)] ="nomor"><br>
+  <input type="text" placeholder="nama Jurusan" [(ngModel)] = "nama"><br>
+  <textarea rows="2" placeholder="Deskripsi Jurusan" [(ngModel)]="deskripsi"></textarea><br>
+  <button click="edit()">Edit</button>
 </div>

@@ -20,4 +20,8 @@ export class GlobalsService {
     this.data.push({nama: namaIn, deskripsi: deskripsiIn, nomor: this.jumlah});
     this.jumlah++;
   }
+
+  public setData(dataIn){
+    this.data = dataIn;
+  }
 }
